@@ -18,7 +18,7 @@ Please install this package from github via:
 
 ```r
 library(devtools)
-install_github("dspim/ckan")
+install_github("dspim/ckanr")
 ```
 
 ## Getting Started
