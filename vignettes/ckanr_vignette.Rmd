@@ -138,6 +138,16 @@ res <- ds_create_dataset(package_id = "hp03-olderman-dentual", name = "DSP Demo 
 resource_delete(res$id)
 ```
 
+## Example for barplot
+
+```r
+id <- hp03$resources[[1]]$id
+raw_data<-ds_search(id, as = "table")
+area<-raw_data$records$地區
+barplot(table(area),col=rainbow(5))
+```
+
+
 ## Error
 
 ### CKAN Server Error
